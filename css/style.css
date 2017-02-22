@@ -1,0 +1,28 @@
+/* Welcome */
+.welcome {
+    background-image: url("../img/massage.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+/* News */
+.news {
+    background-image: url("../img/news.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+/* Footer */
+.footer-top {
+background: #455560;
+padding-top: 15vh;
+padding-bottom: 20vh;
+color: #7a858d;
+}
+.footer-bottom {
+background: #2d3439;
+color: #4f5559;
+padding-bottom: 15vh;
+padding-top: 5vh;
+font-size: 0.6em;
+}
