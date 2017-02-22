@@ -103,7 +103,7 @@ line-height: 17vh;
     color: #a09879;
     font-size: 1.5em;
 }
-.welcome p {
+.hello {
     color: #FFFFFF;
     font-size: 0.8em;
 }
@@ -111,7 +111,7 @@ line-height: 17vh;
     width: 12vw;
     height: 23vh;
     border-radius: 50%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fff;
     line-height: 4vh;
     text-align: center;
@@ -178,7 +178,7 @@ display: block;
     width: 12vw;
     height: 23vh;
     border-radius: 50%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fff;
     line-height: 4vh;
     text-align: center;
