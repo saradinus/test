@@ -1,54 +1,40 @@
 <!doctype html>
-
 <html lang="pl">
-
 <head>
     <title>Zadanie testowe</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-
     <div class="container row">
         <header class="row header">
             <div class="col span_2">&nbsp;</div>
             <div class="col span_2"><img src="img/logo.png" class="img-responsive logo"></div>
             <div class="col span_5">&nbsp;</div>
             <nav class="desktop col span_15">
-                <a href="#" class="upper active">Home</a>
-                <a href="#" class="upper">Produkty</a>
-                <a href="#" class="upper">O firmie</a>
-                <a href="#" class="upper">Aktualności</a>
-                <a href="#" class="upper">Media</a>
-                <a href="#" class="upper">Znajdź klinikę</a>
-                <a href="#" class="upper">Kontakt</a>
-                <a href="#" class="upper">Szukaj</a>
+                <ul>
+                    <li><a href="#" class="upper active">Home</a></li>
+                    <li><a href="#" class="upper">Produkty</a></li>
+                    <li><a href="#" class="upper">O firmie</a></li>
+                    <li><a href="#" class="upper">Aktualności</a></li>
+                    <li><a href="#" class="upper">Media</a></li>
+                    <li><a href="#" class="upper">Znajdź klinikę</a></li>
+                    <li><a href="#" class="upper">Kontakt</a></li>
+                    <li><a href="#" class="upper">Szukaj</a></li>
+                </ul>
             </nav>
-
             <nav class="mobile col span_15">
                 <button>Toggle</button>
-                <div>
-                    <a href="#" class="upper">Home</a>
-                    <a href="#" class="upper">Produkty</a>
-                    <a href="#" class="upper">O firmie</a>
-                    <a href="#" class="upper">Aktualności</a>
-                    <a href="#" class="upper">Media</a>
-                    <a href="#" class="upper">Znajdź klinikę</a>
-                    <a href="#" class="upper">Kontakt</a>
-                    <a href="#" class="upper">Szukaj</a>
-                </div>
             </nav>
         </header>
         <section class="slider row">
-    <img src="http://placehold.it/1920x700" class="img-responsive">
+            <img src="http://placehold.it/1920x700" class="img-responsive">
         </section>
         <section class="welcome row">
             <div class="col span_2">&nbsp;</div>
@@ -60,13 +46,13 @@
                 <p class="hello">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et ligula sed dapibus. Maecenas tincidunt ante pharetra tortor rutrum aliquam. Maecenas eu euismod lorem. Nulla volutpat turpis auctor velit gravida, et ultrices arcu consectetur. Quisque tempus ac eros eget condimentum. Vivamus neque metus, dictum nec nisi nec, sodales vestibulum est.
                 </p>
                 <div class="col span_18">
-                <p class="hello">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et ligula sed dapibus. Maecenas tincidunt ante pharetra tortor rutrum aliquam. Maecenas eu euismod lorem. Nulla volutpat turpis auctor velit gravida, et ultrices arcu consectetur. Quisque tempus ac eros eget condimentum. Vivamus neque metus, dictum nec nisi nec, sodales vestibulum est.
-                </p>
+                    <p class="hello">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et ligula sed dapibus. Maecenas tincidunt ante pharetra tortor rutrum aliquam. Maecenas eu euismod lorem. Nulla volutpat turpis auctor velit gravida, et ultrices arcu consectetur. Quisque tempus ac eros eget condimentum. Vivamus neque metus, dictum nec nisi nec, sodales vestibulum est.
+                    </p>
+                </div>
             </div>
+            <div class="readmore">
+                <p>Czytaj <span>wiecej <i class="fa fa-angle-double-right" aria-hidden="true"></p></span></i>
             </div>
-
-            <div class="readmore"><p>Czytaj <span>wiecej <i class="fa fa-angle-double-right" aria-hidden="true"></p></span></i>
-</div>
         </section>
         <section class="news row">
             <div class="col span_12 award">&nbsp;<img src="img/awards.png" class="img-responsive awards"></div>
@@ -78,7 +64,9 @@
                 </p>
                 <p class="info closing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et ligula sed dapibus. Maecenas tincidunt ante pharetra tortor rutrum aliquam. Maecenas eu euismod lorem.
                 </p>
-                           <div class="readmore2"><p>Czytaj <span>wiecej <i class="fa fa-angle-double-right" aria-hidden="true"></p></span></i></div>
+                <div class="readmore2">
+                    <p>Czytaj <span>wiecej <i class="fa fa-angle-double-right" aria-hidden="true"></p></span></i>
+                </div>
             </div>
         </section>
         <footer role="contentinfo" class="row">
@@ -108,13 +96,14 @@
                 <div class="col span_4">&nbsp;</div>
                 <div class="col span_2"><span class="upper newsletter">Newsletter</span></div>
                 <div class="col span_1">&nbsp;</div>
-                <div class="col span_7"><div class="form-group">
-                  <form action="" method="post">
-                     <label class="sr-only" for="newsletterFooter">Wpisz swój adres email</label> <input name="newsletterEmail" id="newsletterFooter" class="form-control h5-email validate[required]" placeholder="" type="text" value="" >
-                      <button class="upper btn" type="submit">Zapisz się <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-               </div>
-
-            </div>
+                <div class="col span_7">
+                    <div class="form-group">
+                        <form action="" method="post">
+                            <label class="sr-only" for="newsletterFooter">Wpisz swój adres email</label>
+                            <input name="newsletterEmail" id="newsletterFooter" class="form-control h5-email validate[required]" placeholder="" type="text" value="">
+                            <button class="upper btn" type="submit">Zapisz się <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
             </section>
             <section class="footer-bottom">
                 <div class="col span_2">&nbsp;</div>
@@ -127,13 +116,9 @@
                 </div>
             </section>
         </footer>
-
     </div>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="scripts/respond.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
-
 </html>

@@ -25,14 +25,11 @@ padding-bottom: 2vh;
 .logo {
     vertical-align: middle;
 }
-.mobile {
-  display: none;
-  position: fixed;
-  width: 100%;
-  top: 0;
+.header ul {
+    display: inline-flex;
 }
-.mobile div {
-  display: none;
+.mobile {
+    display: none;
 }
 .mobile button {
   position: absolute;
@@ -301,16 +298,25 @@ vertical-align: middle;
 }
 /* RWD */
 @media (max-width: 800px) {
-  .mobile {
-    display: block;
-  }
   .desktop {
-    display: none;
-  }
+    display: none;  }
+    .header ul {
+    display: inline-block;
+    line-height: 1em;
+}
+    .footer-top ul {
+        display: flex;
+    }
+    .mobile {
+    display: block;
+}
     .awards {
         display: none;
     }
     .readmore {
+        display: none;
+    }
+    .readmore2 {
         display: none;
     }
 }
