@@ -1,9 +1,115 @@
+/* Other */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.upper {
+    text-transform: uppercase;
+}
+/* Nav */
+.header {
+    padding-top: 2vh;
+padding-bottom: 2vh;
+}
+.logo {
+    vertical-align: middle;
+}
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.mobile div {
+  display: none;
+}
+.mobile button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.mobile a {
+  display: block;
+padding: 1vh;
+}
+a {
+    margin-right: 2vw;
+    font-size: 0.7em;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  color: #a29061;
+  font-weight: bold;
+}
+a:hover,
+a:active,
+a:focus {
+  color: black;
+}
+.active {
+    color: black;
+}
+.desktop {
+  display: block;
+  overflow: hidden;
+vertical-align: middle;
+line-height: 17vh;
+
+}
 /* Welcome */
 .welcome {
     background-image: url("../img/massage.png");
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
+}
+.welcome h1 {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+.welcome h2 {
+    color: #a09879;
+    font-size: 1.5em;
+}
+.welcome p {
+    color: #FFFFFF;
+}
+.readmore {
+    width: 12vw;
+    height: 23vh;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 4vh;
+    text-align: center;
+    background: #af9a63;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -25vh;
+    padding-top: 4vh;
+}
+.readmore p span {
+display: block;
 }
 /* News */
 .news {
@@ -12,17 +118,108 @@
     background-size: cover;
     background-position:center;
 }
-/* Footer */
+/* Footer-top */
 .footer-top {
 background: #455560;
 padding-top: 15vh;
 padding-bottom: 20vh;
 color: #7a858d;
 }
+@media only screen and (min-width: 768px)
+.ct-form-newsletter {
+    text-align: left;
+}
+.ct-form-newsletter {
+    text-align: center;
+    font-family: font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #157174;
+    padding: 50px 0;
+}
+@media only screen and (min-width: 992px)
+.ct-form-newsletter span {
+    margin-bottom: 0;
+}
+.ct-form-newsletter span {
+    display: block;
+    font-size: 0.820em;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.ct-form-newsletter .form-group {
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 768px)
+.ct-form-newsletter input {
+    margin-bottom: 0;
+}
+.ct-form-newsletter input {
+    height: auto;
+    font-size: inherit;
+    background-color: transparent;
+    padding: 22px 12px 21px 30px;
+    margin-bottom: 20px;
+
+}
+.form-control {
+    background-color: transparent;
+    padding: 1vh;
+    vertical-align: middle;
+    color: #ebebeb;
+    color: rgba(235, 235, 235, 0.87);
+    border-radius: 0px;
+    border-color: #2d3439;
+}
+.btn {
+border: #2d3439;
+background-color: #2d3439;
+padding: 1.5vh 3vw;
+color: #898d90;
+}
+.newsletter {
+    vertical-align: middle;
+}
+input.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+input.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+input.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+input.form-control:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+.newsletter-footer {
+  color: #ffffff;
+}
+/* Footer-bottom */
 .footer-bottom {
 background: #2d3439;
 color: #4f5559;
-padding-bottom: 15vh;
+padding-bottom: 10vh;
 padding-top: 5vh;
 font-size: 0.6em;
 }
+.logo-small {
+display: inline-block;
+margin-right: 1vh;
+vertical-align: middle;
+}
+/* RWD */
+@media (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+
